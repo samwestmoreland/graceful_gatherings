@@ -1,116 +1,73 @@
-body, html {
-    height: 100%;
-    margin: 0;
+html {
+   background: url('https://lh6.googleusercontent.com/eaKFgsX4vVZuYhlM3SqMnxuzDnPYRdnsAPSNKBr0FYl-YqyggJUfiQ') no-repeat;
+   background-size: cover;
+}
+
+body {
+   height: 90vh;
+   width: 90vw;
+   margin: 5vh 5vw;
+}
+
+.container {
+   height: 100%;
+   display: grid;
+   grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+   /*grid-gap: 0.5vw;*/
 }
 
 @font-face {
-    font-family: 'om_telolet_omregular';
-    src: url('omteloletom-webfont.woff2') format('woff2'),
-    url('omteloletom-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-size: larger;
+   font-family: 'om_telolet_omregular';
+   src: url('omteloletom-webfont.woff2') format('woff2'),
+   url('omteloletom-webfont.woff') format('woff');
+   /*font-weight: normal;
+   font-style: normal;
+   font-size: larger;*/
 }
 
 h1 {
-    font-family: om_telolet_omregular;
-    color: dimgray;
-    font-size: 50pt;
-    position: absolute;
-    top: 0;
-    left: 0;
+   font-family: om_telolet_omregular;
+   color: cornsilk;
+   font-size: 72pt;
+   align-self: center;
+   margin: 0;
 }
 
 h2 {
-    font-family: Delius;
-    top: 0px;
-    margin-left: 270px;
-    color: dimgray;
+   font-family: Delius;
+   top: 0px;
+   margin-left: 270px;
+   color: dimgray;
 }
 
 p {
-    margin-left: 270px;
-    margin-right: 200px;
-    font-family: Yrsa;
-    font-size: 18pt
+   margin-left: 270px;
+   margin-right: 200px;
+   font-family: Yrsa;
+   font-size: 18pt
 }
-
-.parallax {
-    background-image: url('https://lh6.googleusercontent.com/eaKFgsX4vVZuYhlM3SqMnxuzDnPYRdnsAPSNKBr0FYl-YqyggJUfiQ');
-
-    /* Full height */
-    height: 100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1024px) {
-    .parallax {
-        background-attachment: scroll;
-    }
 
 a:link {
-    color: dimgray;
-    background-color: transparent;
-    text-decoration: none;
+   color: dimgray;
+   background-color: transparent;
+   text-decoration: none;
 }
 
 a:visited {
-    color: dimgray;
-    background-color: transparent;
-    text-decoration: none;
+   color: dimgray;
+   background-color: transparent;
+   text-decoration: none;
 }
 
 a:active {
-    background-color: transparent;
-    text-decoration: none;
+   background-color: transparent;
 }
 
-.transparent {
-    background:#7f7f7f;
-    background:rgba(255,255,255,0.8);
-}
+/* put grid positions in here */
+@media (min-width: 980px) {
 
-#scrollbox {
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-family: 'Source Serif Pro', serif;
-    font-size: 20px;
-    line-height: 150%;
+   h1 {
+      grid-column: 1 / 4;
+   }
 
-    height: 50%;
-    width: 40%;
-
-    margin: auto;
-}
-
-.sidenav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #444242;
-    overflow-x: hidden;
-    transition: 0.5s    ;
-    padding-top: 0px;
-}
-
-.sidenav a {
-    letter-spacing: 2px;
-<!--    padding: 10px 16px 10px 32px; -->
-    text-decoration: none;
-    color: white;
-    display: block;
-    transition: 0.3s;
 }
