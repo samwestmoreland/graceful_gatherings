@@ -12,7 +12,7 @@ body {
 .container {
    height: 100%;
    display: grid;
-   grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+   grid-template: repeat(8, 1fr) / repeat(8, 1fr);
    /*grid-gap: 0.5vw;*/
 }
 
@@ -20,24 +20,27 @@ body {
    font-family: 'om_telolet_omregular';
    src: url('omteloletom-webfont.woff2') format('woff2'),
    url('omteloletom-webfont.woff') format('woff');
-   /*font-weight: normal;
-   font-style: normal;
-   font-size: larger;*/
 }
 
 h1 {
    font-family: om_telolet_omregular;
-   color: cornsilk;
-   font-size: 72pt;
-   align-self: center;
+   color: seashell;
+   font-size: 65pt;
+   /*align-self: center;*/
    margin: 0;
 }
 
 h2 {
    font-family: Delius;
-   top: 0px;
-   margin-left: 270px;
-   color: dimgray;
+   color: rosybrown;
+   margin: 0;
+}
+
+h3 {
+   font-family: arima madurai;
+   color: slategray;
+   font-size: 22px;
+   margin: 0 0 0.5em 0;
 }
 
 p {
@@ -48,13 +51,12 @@ p {
 }
 
 a:link {
-   color: dimgray;
    background-color: transparent;
    text-decoration: none;
 }
 
 a:visited {
-   color: dimgray;
+   color: slategray;
    background-color: transparent;
    text-decoration: none;
 }
@@ -63,11 +65,19 @@ a:active {
    background-color: transparent;
 }
 
+a:hover {
+   color: olive;
+}
+
 /* put grid positions in here */
 @media (min-width: 980px) {
 
-   h1 {
-      grid-column: 1 / 4;
+   header {
+      grid-column: 1 / 5;
+   }
+
+   navbar {
+      grid-area: 3 / 1 / 8 / 3;
    }
 
 }

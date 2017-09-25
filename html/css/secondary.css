@@ -1,0 +1,102 @@
+html {
+   background-color: #FDFAF3;
+   background-size: cover;
+}
+
+body {
+   height: 80vh;
+   width: 90vw;
+   margin: 10vh 5vw;
+}
+
+.container {
+   height: 100%;
+   display: grid;
+   grid-template: 10vw 1fr / 3fr 6fr 3fr;
+   /*grid-gap: 0.5vw;*/
+}
+
+@font-face {
+   font-family: 'om_telolet_om';
+   src:url('om-telolet-om.woff') format('woff');
+   /*src: url('omteloletom-webfont.woff2') format('woff2'),*/
+   /*url('omteloletom-webfont.woff') format('woff');*/
+}
+
+h1 {
+   font-family: om_telolet_om;
+   color: darkslategray;
+   font-size: 55pt;
+   text-align: center;
+   margin: 0;
+}
+
+h2 {
+   font-family: Delius;
+   color: rosybrown;
+   margin: 0;
+}
+
+h3 {
+   font-family: arima madurai;
+   color: slategray;
+   font-size: 22px;
+   margin: 0 0 0.5em 0;
+}
+
+p {
+   font-family: 'karma';
+   font-size: 15pt;
+   line-height: 30px;
+   text-align: justify;
+}
+
+.photo {
+   display: grid;
+   grid-template: 95vh 8vh / 5% 1fr 5%;
+}
+
+a:link {
+   color: dimgray;
+   background-color: transparent;
+   text-decoration: none;
+}
+
+a:visited {
+   color: dimgray;
+   background-color: transparent;
+   text-decoration: none;
+}
+
+a:active {
+   background-color: transparent;
+}
+
+/* put grid positions in here */
+@media (min-width: 980px) {
+
+   header {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      align-self: center;
+   }
+
+   main {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+   }
+
+   #minajames1 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      width: 80%;
+      margin: 0 10% 0 10%;
+   }
+
+   #minajames1_caption {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      font-family: 'karma';
+      text-align: center;
+   }
+}
